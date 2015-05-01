@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>GlitchJS</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h3> GlitchJs, Generate glitches !</h3>
+<hr>
+<div id="buttons">
+	<p>
+	Pixel size : 
+	<input type="number" name="pxsize" id="pxsize">
+	</p>
+	<p>
+	Moving glitch ? <input type="checkbox" id="mv"/>
+	FPS target ? <input type="number" id="fps"/>
+	</p>
+	<p>
+	Rotate ? <input type="checkbox" id="rotate"/>
+	<p>
+	<p>
+	Random sizing ? <input type="checkbox" id="ransize"/>
+	<p>
+	Color set :
+	<select id="colorSet">
+		<option value="nes">8bit NES</option>
+		<option value="all">All colors</option>
+		<option value="blue">
+			Blue </option>
+	</select>
+	<button onclick="generate()" value="Generate ! <">Generate ! </button>
+	<button onclick="stop()" value="Stop <">Stop </button>
+
+</div>
+<hr>
+<canvas id="glitch" width="500" height="500">
+
+</canvas>
+<div id="fpsN">0 FPS</div>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
